@@ -4,19 +4,19 @@
   "description": "Gear planner and stat calculator tool for Splatoon 2.",
   "main": "index.html",
   "dependencies": {
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^3.0.0",
-    "gulp-uglifycss": "^1.0.8",
-    "q": "^1.5.0"
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglifycss": "^1.1.0",
+    "q": "^1.5.1"
   },
   "devDependencies": {
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-cache-bust": "^1.1.0",
-    "gulp-connect": "^5.0.0",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-cache-bust": "^1.4.1",
+    "gulp-connect": "^5.7.0",
     "gulp-translator": "^0.2.0"
   },
   "scripts": {
@@ -24,12 +24,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DeviPotato/splat2-calc.git"
+    "url": "git+https://github.com/selicia/splat2-calc.git"
   },
   "author": "DeviPotato",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DeviPotato/splat2-calc/issues"
+    "url": "https://github.com/selicia/splat2-calc/issues"
   },
-  "homepage": "https://github.com/DeviPotato/splat2-calc#readme"
+  "homepage": "https://github.com/selicia/splat2-calc#readme"
 }

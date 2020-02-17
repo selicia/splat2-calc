@@ -13,7 +13,7 @@ gulp.task('clean', function() {
 })
 
 
-gulp.task('prep', ['clean'], function() {
+gulp.task('prep', function() {
   gulp.src(['common/*','common/**'])
     .pipe(gulp.dest('dist/common'))
   translations.forEach(function(lang) {
@@ -24,7 +24,7 @@ gulp.task('prep', ['clean'], function() {
     .pipe(gulp.dest('dist/common'))
 })
 
-gulp.task('localize', ['prep'], function() {
+gulp.task('localize', gulp.series('prep'), function() {
   var options = {
     localeDirectory: 'locale/',
     localeExt: '.json'
@@ -73,6 +73,6 @@ gulp.task('watch', function() {
   gulp.watch(watchedPaths, '', ['prep', 'localize']);
 });
 
-gulp.task('serve', ['default', 'webserver', 'watch']);
+gulp.task('serve', gulp.series('localize', 'webserver', 'watch'));
 
-gulp.task('default', ['clean', 'prep', 'localize'])
+gulp.task('default', gulp.series('clean', 'localize'))
